@@ -81,6 +81,7 @@ router.post('/updatePassword', isAuth, handleErrorAsync(async(req, res, next) =>
 router.get('/profile/', isAuth, handleErrorAsync(async(req, res, next)=> {
   let id = req.user.id;
   const user = await User.findById(id);
+  console.log(user);
   handleSuccess(res, user);
 }));
 

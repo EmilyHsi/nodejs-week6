@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "6b7e7630-37da-42c6-a5fc-4298706c2ec1",
+		"name": "week6 - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/posts?keyword=&timeSort=desc",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": ""
+						},
+						{
+							"key": "timeSort",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/posts/62865ceb7fee2fdce3995e4f",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62865ceb7fee2fdce3995e4f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"\",\n    \"user\": \"6285a7e275c2d526931aa08e\",\n    \"image\": \"https://reurl.cc/OA43Yy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"aaaaaaa\",\n    \"user\": \"6285a7e275c2d526931aa08e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/posts/6285aa524c338fd8e4d62931",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6285aa524c338fd8e4d62931"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "註冊",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"emily\",\n    \"email\": \"emily@gmail.com\",\n    \"confirmPassword\": \"1q2w3e4r5t\",\n    \"password\": \"1q2w3e4r5t\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/users/sign_up",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "登入",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"emily@gmail.com\",\n    \"password\": \"1q2w3e4r5t\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/users/sign_in",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "重設密碼",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNTI4ZjAwZjk2MWFlYTMyZmNhNCIsIm5hbWUiOiJlbWlseSIsImlhdCI6MTY1MzMxODk3MCwiZXhwIjoxNjUzMzE4OTcwfQ.lIt6eXcVSElbWXSY1axqeN1gTHMiVDhTn-_I10FeRYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"1q2w3e4r\",\n    \"confirmPassword\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/users/updatePassword",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得個人資料",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNTI4ZjAwZjk2MWFlYTMyZmNhNCIsIm5hbWUiOiJlbWlseSIsImlhdCI6MTY1MzMxOTA3MSwiZXhwIjoxNjUzMzE5MDcxfQ.PnDnGRVO_N6M57eG5USjIqrxo-BRkgDZwuXFm51jjgQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/users/profile",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改個人資料",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNTI4ZjAwZjk2MWFlYTMyZmNhNCIsIm5hbWUiOiJlbWlseSIsImlhdCI6MTY1MzMxOTA3MSwiZXhwIjoxNjUzMzE5MDcxfQ.PnDnGRVO_N6M57eG5USjIqrxo-BRkgDZwuXFm51jjgQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"emily2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-shore-13205.herokuapp.com/users/editProfile/628b9cfa0973565417523e59",
+					"protocol": "https",
+					"host": [
+						"fierce-shore-13205",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"editProfile",
+						"628b9cfa0973565417523e59"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
