@@ -83,7 +83,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"content\": \"\",\n    \"user\": \"6285a7e275c2d526931aa08e\",\n    \"image\": \"https://reurl.cc/OA43Yy\"\n}",
+					"raw": "{\n    \"content\": \"kk22 post\",\n    \"user\": \"628ba76d63e647e8bd735e47\",\n    \"image\": \"https://reurl.cc/OA43Yy\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -142,7 +142,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"emily\",\n    \"email\": \"emily@gmail.com\",\n    \"confirmPassword\": \"1q2w3e4r5t\",\n    \"password\": \"1q2w3e4r5t\"\n}",
+					"raw": "{\n    \"name\": \"bb\",\n    \"email\": \"bb@gmail.com\",\n    \"confirmPassword\": \"bbbbbbbb\",\n    \"password\": \"bbbbbbbb\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -172,7 +172,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"emily@gmail.com\",\n    \"password\": \"1q2w3e4r5t\"\n}",
+					"raw": "{\n    \"email\": \"bb@gmail.com\",\n    \"password\": \"bbbbbbbb\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -203,7 +203,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNTI4ZjAwZjk2MWFlYTMyZmNhNCIsIm5hbWUiOiJlbWlseSIsImlhdCI6MTY1MzMxODk3MCwiZXhwIjoxNjUzMzE4OTcwfQ.lIt6eXcVSElbWXSY1axqeN1gTHMiVDhTn-_I10FeRYw",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGM0ZGM3NWQ2NjNiNTUzYTU0YWExMyIsIm5hbWUiOiJiYiIsImlhdCI6MTY1MzM2MjEyNywiZXhwIjoxNjU2MDQwNTI3fQ.xEO4aRYRbgA23RJDUEmmcCb242mnGdn_snEjeY0KLGQ",
 							"type": "string"
 						}
 					]
@@ -212,7 +212,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"password\": \"1q2w3e4r\",\n    \"confirmPassword\": \"\"\n}",
+					"raw": "{\n    \"password\": \"zzzzzzzz\",\n    \"confirmPassword\": \"zzzzzzzz\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -243,7 +243,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNTI4ZjAwZjk2MWFlYTMyZmNhNCIsIm5hbWUiOiJlbWlseSIsImlhdCI6MTY1MzMxOTA3MSwiZXhwIjoxNjUzMzE5MDcxfQ.PnDnGRVO_N6M57eG5USjIqrxo-BRkgDZwuXFm51jjgQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGM0ZGM3NWQ2NjNiNTUzYTU0YWExMyIsIm5hbWUiOiJiYiIsImlhdCI6MTY1MzM2MjEyNywiZXhwIjoxNjU2MDQwNTI3fQ.xEO4aRYRbgA23RJDUEmmcCb242mnGdn_snEjeY0KLGQ",
 							"type": "string"
 						}
 					]
@@ -274,7 +274,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNTI4ZjAwZjk2MWFlYTMyZmNhNCIsIm5hbWUiOiJlbWlseSIsImlhdCI6MTY1MzMxOTA3MSwiZXhwIjoxNjUzMzE5MDcxfQ.PnDnGRVO_N6M57eG5USjIqrxo-BRkgDZwuXFm51jjgQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOGJhNzZkNjNlNjQ3ZThiZDczNWU0NyIsIm5hbWUiOiJra2siLCJpYXQiOjE2NTMzMTk1NDEsImV4cCI6MTY1NTk5Nzk0MX0.JYuQjkaQGM9oZuRlMkp0FXgZ66UwTwylbu6z0TFJIpo",
 							"type": "string"
 						}
 					]
@@ -283,7 +283,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"emily2\"\n}",
+					"raw": "{\n    \"name\": \"kk22kk22\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -291,7 +291,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://fierce-shore-13205.herokuapp.com/users/editProfile/628b9cfa0973565417523e59",
+					"raw": "https://fierce-shore-13205.herokuapp.com/users/editProfile/628ba76d63e647e8bd735e47",
 					"protocol": "https",
 					"host": [
 						"fierce-shore-13205",
@@ -301,7 +301,7 @@
 					"path": [
 						"users",
 						"editProfile",
-						"628b9cfa0973565417523e59"
+						"628ba76d63e647e8bd735e47"
 					]
 				}
 			},
